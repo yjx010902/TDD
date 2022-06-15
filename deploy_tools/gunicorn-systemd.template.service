@@ -1,11 +1,11 @@
 [Unit]
-Description=Gunicorn server for 47.108.69.43
+Description=Gunicorn server for 150.158.212.247
 
 [Service]
 Restart=on-failure
-User=yjx
-WorkingDirectory=/home/yjx/sites/47.108.69.43/source
-ExecStart=/home/yjx/sites/47.108.69.43/virtualenv/bin/gunicorn --bind unix:/tmp/47.108.69.43.socket superlist.wsgi:application
+User=ubuntu
+WorkingDirectory=/home/ubuntu/sites/150.158.212.247/source
+ExecStart=/home/ubuntu/sites/150.158.212.247/virtualenv/bin/gunicorn --bind unix:/tmp/150.158.212.247.socket superlist.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
