@@ -3,9 +3,9 @@ Description=Gunicorn server for 47.108.69.43
 
 [Service]
 Restart=on-failure
-User=root
-WorkingDirectory=/home/cindy/sites/47.108.69.43/source
-ExecStart=/home/cindy/sites/47.108.69.43/virtualenv/bin/gunicorn --bind unix:/tmp/47.108.69.43.socket superlist.wsgi:application
+User=yjx
+WorkingDirectory=/home/yjx/sites/47.108.69.43/source
+ExecStart=/home/yjx/sites/47.108.69.43/virtualenv/bin/gunicorn --bind unix:/tmp/47.108.69.43.socket superlist.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
